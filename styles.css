@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     font-weight: 100;
     margin: 0;
+    font-size: 20px;
 }
 
 header {
@@ -86,16 +87,18 @@ header a:hover {
   
 .salesforceMaster{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row;
 }
   
 .salesforceImg img {
-    width: 600px;
+  padding-top: 100px;
+  width: 600px;
 }
   
 .salesforceText {
-    max-width: 500px;
+    max-width: 650px;
     text-align: justify;
 }
 
