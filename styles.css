@@ -22,17 +22,17 @@ header {
 
 header a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     font-size: 18px;
 }
 
 a:not(:last-child) {
     padding-right: 10px;
-  }
+}
 
 header a:hover {
     content: "";
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #FFFFFF;
     transition: width 0.3s ease;
 }
 
@@ -41,12 +41,12 @@ header a:hover {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background: white;
+    background: #FFFFFF;
 }
 
 .heroText {
     font-size:20px;
-    color: black;
+    color: #141414;
     padding-top: 20px;
     padding-left: 100px;
 }
@@ -69,7 +69,7 @@ header a:hover {
 .aboutText {
     font-size:20px;
     width: 600px;
-    color: white;
+    color: #FFFFFF;
     text-align: justify;
 }
   
@@ -84,17 +84,17 @@ header a:hover {
     padding: 30px 100px;
 }
   
-  .salesforceMaster{
+.salesforceMaster{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
   
-  .salesforceImg img {
+.salesforceImg img {
     width: 600px;
 }
   
-  .salesforceText {
+.salesforceText {
     max-width: 500px;
     text-align: justify;
 }
@@ -106,28 +106,28 @@ header a:hover {
     margin: 0 auto;
     border-radius: 10px;
     margin-top: 60px;
-  }
+}
   
-  .carousel {
+.carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%
-  }
+}
   
   
-  .carousel-item img {
+.carousel-item img {
     width: 200px;
     display: block;
     border-radius: 10px;
-  }
+}
   
-  .carousel-item {
+.carousel-item {
     padding: 20px 50px;
     display: flex;
     align-items: center;
-  }
+}
   
-  .prev-btn, .next-btn {
+.prev-btn, .next-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -139,103 +139,493 @@ header a:hover {
     padding: 10px;
     border-radius: 50%;
     z-index: 10;
-  }
+}
   
-  .prev-btn {
+.prev-btn {
     left: 10px;
-  }
+}
   
-  .next-btn {
+.next-btn {
     right: 10px;
-  }
+}
   
-  .prev-btn:hover, .next-btn:hover {
+.prev-btn:hover, .next-btn:hover {
     background-color: rgba(0, 0, 0, 0.7);
-  }
+}
   
 
 .projectsWeb {
     background-color: black;
     padding: 50px 100px;
-    color: white;
-  }
+    color: #FFFFFF;
+}
   
-  .projectsWebMaster{
+.projectsWebMaster{
     display: flex;
     align-items: center;
     flex-direction: column;
    
-  }
+}
 
-  .projectsWebText {
+.projectsWebText {
     width: 100%;
     text-align: justify;
-  }
+}
   
-  .containerGrid {
+.containerGrid {
     padding-top: 50px;
+    padding-bottom: 50px;
     max-width: 100%;
     margin: 0 auto;
-  }
+}
   
-  .grid {
+.grid {
     display: grid;
     gap: 20px;
-  }
+}
   
-  .cards {
+.cards {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
+}
   
-  .card {
-    background: white;
+.card {
+    background: #FFFFFF;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-  }
+}
   
-  .card:hover {
+.card:hover {
     transform: translateY(-10px);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  }
+}
   
-  .card i {
+.card i {
     font-size: 40px;
     color: black;
     margin-bottom: 15px;
-  }
+}
   
-  .card h3 {
+.card h3 {
     font-size: 20px;
     color: black;
     margin-bottom: 10px;
-  }
+}
   
-  .contact{
+.contact{
     padding: 20px 100px;
-  }
+}
 
-  .contactMaster{
+.contactMaster{
     max-width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: flex-end;
     border-bottom: 2px solid black;
-  }
+}
   
-  .fab.fa-github, .fab.fa-linkedin, .fab.fa-whatsapp {
+.fab.fa-github, .fab.fa-linkedin, .fab.fa-whatsapp {
     font-size: 30px;
     color: black;
     text-decoration: none;
     padding-left: 10px;
     padding-bottom: 30px;
-  }
+}
   
-  .fab.fa-github:hover, .fab.fa-linkedin:hover,.fab.fa-whatsapp:hover  {
+.fab.fa-github:hover, .fab.fa-linkedin:hover,.fab.fa-whatsapp:hover  {
     color: #636363;
+}
+
+@media (max-width: 1300px) {
+  header {
+    max-width: 100%;
+    padding: 20px 30px;
+  }
+    
+  header a {
+    font-size: 16px;
   }
   
+  .logo img {
+    width: 140px;
+  }
+
+  .heroText {
+    padding-left: 30px;
+    max-width: 100%;
+    margin: 40px 0;
+    margin: 0;
+  }
+    
+  .hero p {
+    font-size: 20px
+  }
+
+  .character img {
+    width: 645px;
+  }
+
+  .about{
+    flex-direction: column;
+    padding: 50px 30px;
+    max-width: 100%;
+  }
+    
+  .aboutText {
+    font-size:25px;
+    width: 100%;
+  }
+      
+  .aboutImg img {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+    
+  .about p {
+    margin: 0;
+  }
+
+  .about p, .salesforceText p, .projectsWeb p, .card h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+    
+  .about h1, .salesforceText h1, .projectsWeb h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+      
+  .salesforce {
+    padding: 0 30px;
+  }
+    
+  .salesforceMaster{
+    flex-direction: column;
+  }
+    
+  .salesforceText {
+    max-width: 100%;
+    font-size: 25px;
+  }
+    
+  .salesforceImg img {
+    display: none;
+  }
+    
+  .carousel-container {
+    max-width: 80%; 
+  }
+    
+  .carousel-item img {
+    width: 100px;
+  }
+
+  .carousel-item {
+    padding: 10px 30px;
+  }
+    
+  .projectsWeb {
+    padding: 20px 30px;
+    font-size: 25px;
+  }
+    
+  .projectsWebMaster{
+    flex-direction: column;
+  }
+    
+  .projectsWebText {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .containerGrid {
+    padding-bottom: 0;
+  }
+    
+  .projectsWebText h1 {
+    text-align: center;
+  }
+    
+  .projectsWebImg img {
+    display: none;
+  }
+    
+  .containerGrid {
+    padding-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .contact{
+    padding: 30px 30px;
+  }
+    
+  .fab.fa-github, .fab.fa-linkedin, .fab.fa-whatsapp {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+    header {
+        max-width: 100%;
+        padding: 30px 50px;
+    }
+    
+    header a {
+        display: none;
+    }
   
+    .logo img {
+        width: 150px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+    }
+    
+      .heroText {
+        font-size:18px;
+        text-align: center;
+        padding: 0;
+        max-width: 100%;
+        margin: 40px 0;
+    }
+
+      .character img {
+        display: none;
+    }
+
+      .hero p {
+        font-size: 16px
+    }
+
+  .about{
+      flex-direction: column;
+      padding: 50px 30px;
+      max-width: 100%;
+  }
+    
+  .aboutText {
+    font-size:16px;
+    width: 100%;
+  }
+      
+  .aboutImg img {
+    width: 270px;
+    margin-bottom: 30px;
+  }
+    
+  .about p, .salesforceText p, .projectsWeb p, .card h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+    
+  .about h1, .salesforceText h1, .projectsWeb h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+    
+  .salesforce {
+    padding: 0 30px;
+  }
+    
+  .salesforceMaster{
+    flex-direction: column;
+  }
+    
+  .salesforceText {
+    max-width: 100%;
+  }
+    
+    .salesforceImg img {
+     display: none;
+    }
+    
+    .carousel-container {
+      max-width: 80%; 
+    }
+    
+    .carousel-item img {
+      width: 100px;
+    }
+    .carousel-item {
+      padding: 10px 30px;
+    }
+    
+    .projectsWeb {
+      padding: 20px 30px;
+    }
+    
+    .projectsWebMaster{
+    flex-direction: column;
+     
+    }
+    
+    .projectsWebText {
+      width: 100%;
+      text-align: justify;
+    }
+
+    .containerGrid {
+        padding-bottom: 0;
+        padding-top: 40px;
+    }
+    
+    .projectsWebText h1 {
+      text-align: center;
+    }
+    
+    .projectsWebImg img {
+      display: none;
+    }
+    
+    .containerGrid {
+      padding-top: 30px;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    
+    .contact{
+      padding: 10px 30px;
+    }
+    
+    .fab.fa-github, .fab.fa-linkedin, .fab.fa-whatsapp {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+      padding: 20px 10px;
+    }
+  
+    .logo img {
+        width: 120px;
+    }
+  
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      position: static;
+    }
+  
+    .heroText {
+      font-size: 14px;
+      text-align: center;
+      padding: 0;
+      max-width: 100%;
+      margin: 40px 0;
+    }
+  
+    .character img {
+      display: none;
+    }
+  
+    .hero p {
+      font-size: 14px
+    }
+  
+    .about{
+      flex-direction: column;
+      padding: 50px 30px;
+    }
+  
+    .aboutText {
+      font-size:14px;
+      width: 100%;
+    }
+    
+    .aboutImg img {
+      width: 200px;
+      margin-bottom: 30px;
+    }
+  
+    .about p {
+      margin: 0;
+    }
+  
+    .about h1, .salesforceText h1 {
+      text-align: center;
+    }
+  
+    
+  .salesforce {
+    padding: 0 30px;
+  }
+  
+  .salesforceMaster{
+   flex-direction: column;
+  }
+  
+  .salesforceText {
+    max-width: 100%;
+    font-size: 14px
+  }
+  
+  .salesforceImg img {
+    display: none;
+  }
+  
+  .carousel-container {
+    max-width: 80%; 
+  }
+  
+  .carousel-item img {
+    width: 100px;
+  }
+  .carousel-item {
+    padding: 10px 20px;
+  }
+  
+  .projectsWeb {
+    padding: 20px 30px;
+    font-size: 14px;
+  }
+  
+  .projectsWebMaster{
+  flex-direction: column;
+   
+  }
+  
+  .projectsWebText {
+    width: 100%;
+    text-align: justify;
+  }
+  
+  .projectsWebText h1 {
+    text-align: center;
+  }
+  
+  .projectsWebImg img {
+    display: none;
+  }
+  
+  .containerGrid {
+    padding-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+  
+  .contact{
+    padding: 10px 30px;
+  }
+  
+  .fab.fa-github, .fab.fa-linkedin, .fab.fa-whatsapp {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }  
+}
