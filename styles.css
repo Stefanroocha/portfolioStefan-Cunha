@@ -175,6 +175,7 @@ swiper-slide {
 
 swiper-slide img {
   max-width: 20%; /* Ajuste o tamanho para caber no slide */
+  height: 50%;
   margin: 0 5%; /* Espaço entre as imagens */
   display: inline-block; /* Lado a lado */
 }
