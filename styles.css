@@ -1,291 +1,322 @@
 body {
-    font-family: "Open Sans", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    overflow-x: hidden;
-    font-weight: 100;
-    margin: 0;
-    font-size: 20px;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+  font-weight: 100;
+  margin: 0;
+  font-size: 20px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 100px;
-    background: black;
-    font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  background: black;
+  font-weight: 100;
 }
 
 .logo img{
-    width: 200px;
+  width: 200px;
 }
 
 header a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 18px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 18px;
 }
 
 a:not(:last-child) {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 header a:hover {
-    content: "";
-    border-bottom: 1px solid #FFFFFF;
-    transition: width 0.3s ease;
+  content: "";
+  border-bottom: 1px solid #FFFFFF;
+  transition: width 0.3s ease;
 }
 
 .hero {
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background: #FFFFFF;
-    position: relative;
-    overflow: hidden;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: #FFFFFF;
+  position: relative;
+  overflow: hidden;
 }
 
 .heroText {
-    font-size:20px;
-    color: #141414;
-    padding-top: 20px;
-    padding-left: 100px;
-    display: inline-block;
-    transform: translateX(-100%);
-    animation: slideInText 1.5s ease-out forwards;
+  font-size:20px;
+  color: #141414;
+  padding-top: 20px;
+  padding-left: 100px;
+  display: inline-block;
+  transform: translateX(-100%);
+  animation: slideInText 1.5s ease-out forwards;
 }
 
 @keyframes slideInText {
-  from {
-      transform: translateX(-100%);
-  }
-  to {
-      transform: translateX(0);
-  }
+from {
+    transform: translateX(-100%);
+}
+to {
+    transform: translateX(0);
+}
 }
 
 .character img {
-    max-width: 800px;
-    height: 100%;
+  max-width: 800px;
+  height: 100%;
 }
 
 .about{
-    background-color: #16151A;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding: 70px 100px;
-    margin: 0;
+  background-color: #16151A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 70px 100px;
+  margin: 0;
 }
 
 .aboutText, .aboutImg{
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 0.5s ease;
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 1s ease, transform 0.5s ease;
 }
 
 
 .aboutText {
-    font-size:20px;
-    width: 600px;
-    color: #FFFFFF;
-    text-align: justify;
+  font-size:20px;
+  width: 600px;
+  color: #FFFFFF;
+  text-align: justify;
 }
-  
+
 .aboutImg img {
-    border-radius: 50px;
-    width: 400px;
+  border-radius: 50px;
+  width: 400px;
 }
 
 .salesforce {
-    max-width: 100%;
-    margin: 40px 0;
-    padding: 30px 100px;
+  max-width: 100%;
+  margin: 40px 0;
+  padding: 30px 100px;
 }
-  
+
 .salesforceMaster{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
 }
 
 .salesforceImg {
-  opacity: 0; /* Invisível inicialmente */
-  transform: translateY(20px); /* Deslocado para baixo */
-  transition: opacity 0.5s ease, transform 0.5s ease;
+opacity: 0; /* Invisível inicialmente */
+transform: translateY(20px); /* Deslocado para baixo */
+transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .aboutText.show, .aboutImg.show, .salesforceImg.show {
-  opacity: 1;
-  transform: translateY(0);
+opacity: 1;
+transform: translateY(0);
 }
-  
+
 .salesforceImg img {
-  width: 550px;
+width: 550px;
 }
 
 .salesforceText {
-    max-width: 600px;
-    text-align: justify;
-    opacity: 0; /* Invisível inicialmente */
-    transform: translateX(-100px); /* Deslocado para baixo */
-    transition: opacity 1.5s ease, transform 0.5s ease;
+  max-width: 600px;
+  text-align: justify;
+  opacity: 0; /* Invisível inicialmente */
+  transform: translateX(-100px); /* Deslocado para baixo */
+  transition: opacity 1.5s ease, transform 0.5s ease;
 }
 
 .salesforceText.show {
-  opacity: 1; /* Torna o elemento visível */
-  transform: translateX(0); /* Retorna à posição original */
+opacity: 1; /* Torna o elemento visível */
+transform: translateX(0); /* Retorna à posição original */
+}
+html,
+body {
+  position: relative;
+  height: 100%;
 }
 
-.carousel-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    border-radius: 10px;
-    margin-top: 60px;
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
-  
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%
+
+swiper-container {
+  width: 80%;
+  height: 100%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  color: black;
 }
-  
-  
-.carousel-item img {
-    width: 200px;
-    display: block;
-    border-radius: 10px;
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
-.carousel-item {
-    padding: 20px 50px;
-    display: flex;
-    align-items: center;
+
+swiper-slide img {
+  max-width: 20%; /* Ajuste o tamanho para caber no slide */
+  margin: 0 5%; /* Espaço entre as imagens */
+  display: inline-block; /* Lado a lado */
 }
-  
-.prev-btn, .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    z-index: 10;
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
 }
-  
-.prev-btn {
-    left: 10px;
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
 }
-  
-.next-btn {
-    right: 10px;
+
+.mySwiper {
+  --swiper-theme-color: #141414; /* Cor principal do tema */
+  width: 100%;
+  height: 300px;
 }
-  
-.prev-btn:hover, .next-btn:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--swiper-theme-color); /* Aplica a cor da variável */
 }
-  
+
+.swiper-pagination-bullet {
+  background: #ccc; /* Cor padrão para os bullets */
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--swiper-theme-color); /* Aplica a cor ativa */
+}
+
 
 .projectsWeb {
-    background-color: #16151A;
-    padding: 50px 100px;
-    color: #FFFFFF;
+  background-color: #16151A;
+  padding: 50px 100px;
+  color: #FFFFFF;
 }
-  
+
 .projectsWebMaster{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
 .projectsWebText {
-    width: 100%;
-    text-align: justify;
+  width: 100%;
+  text-align: justify;
 }
-  
+
 .containerGrid {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: 0 auto;
-    margin: 0;
-    width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  margin: 0;
+  width: 100%;
 }
 
 .grid {
-    display: grid;
-    gap: 20px;
+  display: grid;
+  gap: 20px;
 }
-  
+
 .cards {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+display: flex;
+align-items: center;
+flex-direction: row;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-  
+
 .card {
-  width: 100%;
-    background: #FFFFFF;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+width: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-  
+
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
-  
+
 .card i {
-    font-size: 40px;
-    color: #141414;
-    margin-bottom: 15px;
+  font-size: 40px;
+  color: #141414;
+  margin-bottom: 15px;
 }
-  
+
 .card h3 {
-    font-size: 20px;
-    color: #141414;
-    margin-bottom: 10px;
+  font-size: 20px;
+  color: #141414;
+  margin-bottom: 10px;
 }
-  
+
 .contact{
-    padding: 20px 100px;
+  padding: 20px 100px;
 }
 
 .contactMaster{
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-end;
-    border-bottom: 2px solid #141414;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-bottom: 2px solid #141414;
 }
-  
+
 .fab.fa-github, .fab.fa-linkedin, .fab.fa-whatsapp {
-    font-size: 30px;
-    color: #141414;
-    text-decoration: none;
-    padding-left: 10px;
-    padding-bottom: 30px;
+  font-size: 30px;
+  color: #141414;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-bottom: 30px;
 }
-  
+
 .fab.fa-github:hover, .fab.fa-linkedin:hover,.fab.fa-whatsapp:hover  {
-    color: #636363;
+  color: #636363;
 }
 
 @media (max-width: 1300px) {
@@ -301,7 +332,7 @@ header a:hover {
   .logo img {
     width: 140px;
   }
-
+  
   .heroText {
     padding-left: 30px;
     max-width: 100%;
@@ -312,11 +343,11 @@ header a:hover {
   .hero p {
     font-size: 20px
   }
-
+  
   .character img {
     width: 645px;
   }
-
+  
   .about{
     flex-direction: column;
     padding: 50px 30px;
@@ -336,7 +367,7 @@ header a:hover {
   .about p {
     margin: 0;
   }
-
+  
   .about p, .salesforceText p, .projectsWeb p, .card h3 {
     margin: 0;
     font-size: 18px;
@@ -371,7 +402,7 @@ header a:hover {
   .carousel-item img {
     width: 100px;
   }
-
+  
   .carousel-item {
     padding: 10px 30px;
   }
@@ -389,7 +420,7 @@ header a:hover {
     width: 100%;
     text-align: justify;
   }
-
+  
   .containerGrid {
     padding-bottom: 0;
   }
@@ -408,7 +439,7 @@ header a:hover {
     margin: 0 auto;
     margin-bottom: 30px;
   }
-
+  
   .contact{
     padding: 30px 30px;
   }
@@ -417,9 +448,9 @@ header a:hover {
     font-size: 25px;
     padding-bottom: 10px;
   }
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     header {
         max-width: 100%;
         padding: 30px 50px;
@@ -432,7 +463,7 @@ header a:hover {
     .logo img {
         width: 150px;
     }
-
+  
     .hero {
         flex-direction: column;
         align-items: center;
@@ -446,15 +477,15 @@ header a:hover {
         max-width: 100%;
         margin: 40px 0;
     }
-
+  
       .character img {
         display: none;
     }
-
+  
       .hero p {
         font-size: 16px
     }
-
+  
   .about{
       flex-direction: column;
       padding: 50px 30px;
@@ -521,7 +552,7 @@ header a:hover {
       width: 100%;
       text-align: justify;
     }
-
+  
     .containerGrid {
         padding-bottom: 0;
         padding-top: 40px;
@@ -550,8 +581,8 @@ header a:hover {
       font-size: 20px;
       padding-bottom: 10px;
     }
-}
-
+  }
+  
 @media (max-width: 480px) {
     header {
       padding: 20px 10px;
@@ -664,7 +695,11 @@ header a:hover {
     margin: 0 auto;
     margin-bottom: 30px;
   }
-
+  
+  .cards {
+    flex-direction: column;
+  }
+  
   .card h3 {
     font-size: 14px;
   }
@@ -677,4 +712,4 @@ header a:hover {
     font-size: 20px;
     padding-bottom: 10px;
   }  
-}
+  }

@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header>
@@ -68,24 +71,37 @@
                 <img src="img/workforce-program-hero.png" alt="Descrição da imagem">
             </div>
         </div>
-        <div class="carousel-container">
-            <div class="carousel">
-              <div class="carousel-item"><img src="img/59f66f2a7813c819fbfcf2d118167331.png" alt="Imagem 1"></div>
-              <div class="carousel-item"><img src="img/logo-grupo-bc-energia.png" alt="Imagem 2"></div>
-              <div class="carousel-item"><img src="img/Logo-Yara.png" alt="Imagem 3"></div>
-              <div class="carousel-item"><img src="img/rhopen-consultoria-logo-gptw.png" alt="Imagem 4"></div>
-              <div class="carousel-item"><img src="img/sabagram-color.png" alt="Imagem 5"></div>
-              <div class="carousel-item"><img src="img/marca-qualita-group-vertical.png" alt="Imagem 5"></div>
-              <div class="carousel-item"><img src="img/59f66f2a7813c819fbfcf2d118167331.png" alt="Imagem 1"></div>
-              <div class="carousel-item"><img src="img/logo-grupo-bc-energia.png" alt="Imagem 2"></div>
-              <div class="carousel-item"><img src="img/Logo-Yara.png" alt="Imagem 3"></div>
-              <div class="carousel-item"><img src="img/rhopen-consultoria-logo-gptw.png" alt="Imagem 4"></div>
-              <div class="carousel-item"><img src="img/sabagram-color.png" alt="Imagem 5"></div>
-              <div class="carousel-item"><img src="img/marca-qualita-group-vertical.png" alt="Imagem 5"></div>
+        <swiper-container 
+            class="mySwiper" 
+            pagination="true" 
+            navigation="true" 
+            space-between="30"
+            centered-slides="true" 
+            autoplay-delay="2500" 
+            autoplay-disable-on-interaction="false">
+            
+            <swiper-slide>
+                <img src="img/59f66f2a7813c819fbfcf2d118167331.png" alt="Image 1" />
+                <img src="img/rhopen-consultoria-logo-gptw.png" alt="Image 2" />
+            </swiper-slide>
+            
+            <swiper-slide>
+                <img src="img/logo-grupo-bc-energia.png" alt="Imagem 3">
+                <img src="img/Logo-Yara.png" alt="Imagem 4"> 
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="img/sabagram-color.png" alt="Image 5" />
+                <img src="img/marca-qualita-group-vertical.png" alt="Image 6" />
+            </swiper-slide>
+
+            <div class="autoplay-progress" slot="container-end">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
             </div>
-            <button class="prev-btn">&lt;</button>
-            <button class="next-btn">&gt;</button>
-        </div>
+        </swiper-container>
     </div>
 
     <div class="projectsWeb" id="projectsWeb">
@@ -151,7 +167,8 @@
             </div>
         </div>
         </div>
-          <script src="script.js"></script>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
