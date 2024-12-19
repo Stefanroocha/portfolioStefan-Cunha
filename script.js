@@ -1,36 +1,25 @@
-document.addEventListener('scroll', function () {
-  // Seleciona todos os elementos que você quer animar
-  const textElements = document.querySelectorAll('.aboutText, .aboutImg, .salesforceText, .salesforceImg, .projectsWebMaster');// Adicione as classes desejadas aqui
+document.addEventListener('DOMContentLoaded', () => {
+    
+    const carousel = document.querySelector('.carousel');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
-  textElements.forEach(function (textElement) {
-    const textPosition = textElement.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
+let currentIndex = 0;
 
-    if (textPosition < windowHeight) {
-      textElement.classList.add('show'); // Adiciona a classe para iniciar a animação
-    }
-  });
+function updateCarousel() {
+  const offset = -currentIndex * 100;
+  carousel.style.transform = `translateX(${offset}%)`;
+}
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex > 0) ? currentIndex - 1 : 0;
+  updateCarousel();
 });
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-      if (entry.isIntersecting) {
-          entry.target.classList.add('show'); // Adiciona a classe para animar
-      }
-  });
+nextBtn.addEventListener('click', () => {
+  const totalItems = document.querySelectorAll('.carousel-item').length;
+  currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : currentIndex;
+  updateCarousel();
 });
 
-// Observa os elementos que devem ser animados
-const elementsToAnimate = document.querySelectorAll('.aboutText, .aboutImg, .salesforceText, .salesforceImg, .projectsWebMaster');
-elementsToAnimate.forEach(element => observer.observe(element));
-
-
-const progressCircle = document.querySelector(".autoplay-progress svg");
-const progressContent = document.querySelector(".autoplay-progress span");
-
-const swiperEl = document.querySelector("swiper-container");
-swiperEl.addEventListener("autoplaytimeleft", (e) => {
-  const [swiper, time, progress] = e.detail;
-  progressCircle.style.setProperty("--progress", 1 - progress);
-  progressContent.textContent = `${Math.ceil(time / 1000)}s`;
 });

@@ -3,27 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Stefan Cunha</title>
+    <title>Portfólio Futurista</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="img/STEFAN CUNHA LOGO.png" alt="Personagem Futurista">
-        </div>
+        <div class="logo">Stefan Cunha</div>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#salesforce">Salesforce</a>
             <a href="#projectsWeb">Projects Web</a>
-            <a href="https://wa.me/27992052268" target="_blank">Contact</a>
+            <a href="#contact">Contact</a>
         </nav>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </header>
@@ -35,8 +27,11 @@
         <p>Turning ideas into Salesforce solutions</p>
         </div>
         <div class="character">
-            <img src="img/imgtec.jpg">
+            <img src="img/Design sem nome (30).png" alt="Personagem Futurista">
         </div>
+        <div class="planet" style="top: 20%; left: 10%;"> <img src="img/gear-wheel-304395_1280.webp" alt="Personagem Futurista"></div>
+        <div class="planet" style="top: 10%; right: 15%; width: 80px; height: 80px;"> <img src="img/gear-wheel-304395_1280.webp" alt="Personagem Futurista"></div>
+        <div class="planet" style="bottom: 20%; left: 25%; width: 60px; height: 60px;"><img src="img/gear-wheel-304395_1280.webp" alt="Personagem Futurista"></div>
     </div>
 
     
@@ -44,7 +39,7 @@
 
     <div class="about" id="about">
         <div class="aboutImg">
-            <img src="img/St.jpg" alt="Personagem Futurista">
+            <img src="img/1723162291534.jpeg" alt="Personagem Futurista">
         </div>
         <div class="aboutText">
             <h1>STEFAN CUNHA</h1>
@@ -68,87 +63,79 @@
                     Valorizo os detalhes em cada projeto, dedicando atenção especial até mesmo aos componentes mais simples para garantir uma experiência visual e funcional superior. Essa abordagem reflete o cuidado e a dedicação que aplico em cada etapa do desenvolvimento, sempre buscando agregar valor ao cliente e à equipe.</p>
             </div>
             <div class="salesforceImg">
-                <img src="img/workforce-program-hero.png" alt="Descrição da imagem">
+                <img src="img/salescloud-demo-1712932250.webp" alt="Descrição da imagem">
             </div>
         </div>
-        <swiper-container 
-            class="mySwiper" 
-            pagination="true" 
-            navigation="true" 
-            space-between="30"
-            centered-slides="true" 
-            autoplay-delay="2500" 
-            autoplay-disable-on-interaction="false">
-            
-            <swiper-slide>
-                <img src="img/59f66f2a7813c819fbfcf2d118167331.png" alt="Image 1" />
-                <img src="img/rhopen-consultoria-logo-gptw.png" alt="Image 2" />
-            </swiper-slide>
-            
-            <swiper-slide>
-                <img src="img/logo-grupo-bc-energia.png" alt="Imagem 3">
-                <img src="img/Logo-Yara.png" alt="Imagem 4"> 
-            </swiper-slide>
-
-            <swiper-slide>
-                <img src="img/sabagram-color.png" alt="Image 5" />
-                <img src="img/marca-qualita-group-vertical.png" alt="Image 6" />
-            </swiper-slide>
-
-            <div class="autoplay-progress" slot="container-end">
-                <svg viewBox="0 0 48 48">
-                    <circle cx="24" cy="24" r="20"></circle>
-                </svg>
-                <span></span>
+        <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-item"><img src="img/59f66f2a7813c819fbfcf2d118167331.png" alt="Imagem 1"></div>
+              <div class="carousel-item"><img src="img/logo-grupo-bc-energia.png" alt="Imagem 2"></div>
+              <div class="carousel-item"><img src="img/Logo-Yara.png" alt="Imagem 3"></div>
+              <div class="carousel-item"><img src="img/rhopen-consultoria-logo-gptw.png" alt="Imagem 4"></div>
+              <div class="carousel-item"><img src="img/sabagram-color.png" alt="Imagem 5"></div>
+              <div class="carousel-item"><img src="img/marca-qualita-group-vertical.png" alt="Imagem 5"></div>
+              <div class="carousel-item"><img src="img/59f66f2a7813c819fbfcf2d118167331.png" alt="Imagem 1"></div>
+              <div class="carousel-item"><img src="img/logo-grupo-bc-energia.png" alt="Imagem 2"></div>
+              <div class="carousel-item"><img src="img/Logo-Yara.png" alt="Imagem 3"></div>
+              <div class="carousel-item"><img src="img/rhopen-consultoria-logo-gptw.png" alt="Imagem 4"></div>
+              <div class="carousel-item"><img src="img/sabagram-color.png" alt="Imagem 5"></div>
+              <div class="carousel-item"><img src="img/marca-qualita-group-vertical.png" alt="Imagem 5"></div>
             </div>
-        </swiper-container>
+            <button class="prev-btn">&lt;</button>
+            <button class="next-btn">&gt;</button>
+        </div>
     </div>
 
     <div class="projectsWeb" id="projectsWeb">
         <div class="projectsWebMaster">
             <div class="projectsWebText">
                 <h1>PROJECTS WEB</h1>
-                <p>Minha jornada na tecnologia começou com o estudo de desenvolvimento front-end, onde pude explorar minha criatividade e interesse por design e usabilidade. No entanto, ao longo do tempo, me envolvi com o ecossistema Salesforce e, assim, migrei para essa plataforma, onde encontrei novos desafios e oportunidades de crescimento
-                    Hoje, tenho duas paixões que me impulsionam: Salesforce e desenvolvimento front-end. Embora minha carreira profissional esteja centrada em Salesforce, continuo a estudar e me aprimorar em front-end nas minhas horas vagas, buscando sempre expandir minhas habilidades e acompanhar as últimas tendências do mercado.
-                    Essa combinação de conhecimentos me permite criar soluções mais completas e eficientes, integrando o melhor de ambos os mundos – a robustez do Salesforce e a experiência de usuário aprimorada do desenvolvimento front-end. Estou em constante aprendizado e aberto a novos desafios que me permitam crescer ainda mais nas duas áreas.
-                </p>
-            </div>   
-            <div class="containerGrid">
-                <div class="cards grid">
+                <p>Minha jornada na tecnologia começou com o estudo de desenvolvimento front-end, onde pude explorar minha criatividade e interesse por design e usabilidade. No entanto, ao longo do tempo, me envolvi com o ecossistema Salesforce e, assim, migrei para essa plataforma, onde encontrei novos desafios e oportunidades de crescimento.
 
-                    <div class="card">
+                    Hoje, tenho duas paixões que me impulsionam: Salesforce e desenvolvimento front-end. Embora minha carreira profissional esteja centrada em Salesforce, continuo a estudar e me aprimorar em front-end nas minhas horas vagas, buscando sempre expandir minhas habilidades e acompanhar as últimas tendências do mercado.
+                    
+                    Essa combinação de conhecimentos me permite criar soluções mais completas e eficientes, integrando o melhor de ambos os mundos – a robustez do Salesforce e a experiência de usuário aprimorada do desenvolvimento front-end. Estou em constante aprendizado e aberto a novos desafios que me permitam crescer ainda mais nas duas áreas.</p>
+                <div class="containerGrid">
+                    <div class="cards grid">
+                        <div class="card">
                         <i class="icon-truck"></i>
                         <h3 class="title">Project 1</h3>
                         <p></p>
-                    </div>
-                    <div class="card">
-                        <i class="icon-bin_disposal_ecology_environmental_recycle_icon"></i>
-                        <h3 class="title"> Project 2</h3>
-                        <p></p>
-                    </div>
+                        </div>
         
-                    <div class="card">
+                        <div class="card">
+                            <i class="icon-bin_disposal_ecology_environmental_recycle_icon"></i>
+                            <h3 class="title"> Project 2</h3>
+                            <p></p>
+                        </div>
+        
+                        <div class="card">
                         <i class="icon-care_ecology_plant_icon"></i>
                         <h3 class="title">Project 3</h3>
                         <p></p>
-                    </div>
+                        </div>
         
-                    <div class="card">
+                        <div class="card">
                         <i class="icon-conference_presentation_training_icon"></i>
                         <h3 class="title">Project 4</h3>
                         <p></p>
-                    </div>
+                        </div>
         
-                    <div class="card">
-                        <i class="icon-object_document_essential_web_icon"></i>
-                        <h3 class="title">Project 5</h3>
-                        <p></p>
+                        <div class="card">
+                            <i class="icon-object_document_essential_web_icon"></i>
+                            <h3 class="title">Project 5</h3>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="projectsWebImg">
+                <img src="img/Design sem nome (18).png" alt="Descrição da imagem">
+            </div>
         </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contactMaster">
             <div class="icon"> 
                 <a href="https://www.linkedin.com/in/stefan-cunha-215077216/" target="_blank">
@@ -167,8 +154,7 @@
             </div>
         </div>
         </div>
+          <script src="script.js"></script>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
